@@ -28,19 +28,32 @@ function App() {
           <Link to="/">Padel</Link>
         </h1>
 
-        <Suspense>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route
-              path="/challenge"
-              element={<Challenge players={players} />}
-            />
-            <Route
-              path="/AddPlayer"
-              element={<AddPlayer players={players} setPlayers={setPlayers} />}
-            />
-          </Routes>
-        </Suspense>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Suspense>
+                <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/challenge"
+            element={
+              <Suspense>
+                <Challenge players={players} />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/AddPlayer"
+            element={
+              <Suspense>
+                <AddPlayer players={players} setPlayers={setPlayers} />
+              </Suspense>
+            }
+          />
+        </Routes>
       </div>
     </Router>
   );
