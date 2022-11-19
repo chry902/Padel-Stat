@@ -1,5 +1,6 @@
 {
   "name": "padel-stat",
+  "homepage": "https://chry902.github.io/padel-stat/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
