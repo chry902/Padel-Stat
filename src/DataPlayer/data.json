@@ -3,6 +3,7 @@
     {"id":1,
         "nome":"Christopher",
         "cognome":"Tarascio",
+        "phone":342734453,
         "data":[
             {"09/11/2022":[
                 {
@@ -109,6 +110,7 @@
     {"id":2,
         "nome":"Erick",
         "cognome":"Mure",
+        "phone":3423223,
         "data":[
             {"09/11/2022":[
                 {

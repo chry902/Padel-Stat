@@ -7,12 +7,18 @@ const Challenge = ({ players }) => {
 
   const sendPlayer = (ply) => {
     console.log("ply", ply.id);
-    const alreadyExist = playerInAMatch.find((el) => el.id === ply.id);
+    const alreadyExist = playerInAMatch.find((el) => el.phone === ply.phone);
     console.log("alreadyExist", alreadyExist);
     if (!alreadyExist) {
       setPlayerInAMatch((prev) => [...prev, ply]);
       console.log("setPlayerMatch", playerInAMatch);
     }
+  };
+  const removePlayer = (ply) => {
+    console.log("remove", ply);
+    const refreshArr = playerInAMatch.filter((el) => el.phone !== ply.phone);
+    console.log("newArr", refreshArr);
+    setPlayerInAMatch(refreshArr);
   };
   return (
     <div>
@@ -21,7 +27,7 @@ const Challenge = ({ players }) => {
         <ul>
           {players.map((item, id) => (
             <li key={id} onClick={() => sendPlayer(item)}>
-              {item.nome} {item.cognome}
+              {item.nome} {item.cognome} {item.phone}
             </li>
           ))}
         </ul>
@@ -30,8 +36,8 @@ const Challenge = ({ players }) => {
         <h2>Player in a match </h2>
         <ul>
           {playerInAMatch.map((item, id) => (
-            <li key={id} onClick={() => sendPlayer(item)}>
-              {item.nome} {item.cognome}
+            <li key={id} onClick={() => removePlayer(item)}>
+              {item.nome} {item.cognome} <span>X</span>
             </li>
           ))}
         </ul>

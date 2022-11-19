@@ -1,9 +1,11 @@
 import { useState } from "react";
+
 // import styles from "./styles.module.scss";
 
 const AddPlayer = ({ players, setPlayers }) => {
   const [playerName, setPlayerName] = useState("");
   const [playerSurname, setPlayerSurname] = useState("");
+  const [playerPhoneNumber, setPlayerPhoneNumber] = useState("");
   const [playerAge, setPlayerAge] = useState("");
   // const [player, setPlayer] = useState("");
   const addPlayer = (e) => {
@@ -15,6 +17,7 @@ const AddPlayer = ({ players, setPlayers }) => {
       nome: playerName,
       cognome: playerSurname,
       age: playerAge,
+      phone: playerPhoneNumber,
       data: "",
     };
 
@@ -24,7 +27,7 @@ const AddPlayer = ({ players, setPlayers }) => {
     setPlayerName("");
     setPlayerSurname("");
     setPlayerAge("");
-
+    setPlayerPhoneNumber("");
     // setPlayer({
     //   name: playerName,
     //   cognome: playerSurname,
@@ -59,8 +62,15 @@ const AddPlayer = ({ players, setPlayers }) => {
           required
         />
 
-        {/* <label>Second Name</label>
-        <input /> */}
+        <label>Phone number</label>
+        <input
+          value={playerPhoneNumber}
+          onChange={(e) => setPlayerPhoneNumber(e.target.value)}
+          type="number"
+          id="playerPhoneNumber"
+          name="playerPhoneNumber"
+          required
+        />
 
         {/* <label>Age</label>
         <input
