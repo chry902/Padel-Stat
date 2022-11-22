@@ -10,6 +10,7 @@ const Home = lazy(() => import("./Components/Home"));
 
 function App() {
   const [players, setPlayers] = useState(DataPlayer);
+  const [takePlayer, setTakePlayer] = useState("");
 
   // console.log("singlePlayer", singlePlayer);
   // useEffect(() => {
@@ -42,7 +43,7 @@ function App() {
             path="/SelectPeople"
             element={
               <Suspense>
-                <SelectPeople players={players} />
+                <SelectPeople players={players} setTakePlayer={setTakePlayer} />
               </Suspense>
             }
           />
@@ -58,7 +59,7 @@ function App() {
             path="/challenge"
             element={
               <Suspense>
-                <Challeng />
+                <Challeng takePlayer={takePlayer} />
               </Suspense>
             }
           />

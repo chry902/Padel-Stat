@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import styles from "./styles.module.scss";
 
-const SelectPeople = ({ players }) => {
+const SelectPeople = ({ players, setTakePlayer }) => {
   const [playerInAMatch, setPlayerInAMatch] = useState([]);
   // const [takePlayer, setTakePlayer] = useState('')
 
@@ -21,6 +21,12 @@ const SelectPeople = ({ players }) => {
     console.log("newArr", refreshArr);
     setPlayerInAMatch(refreshArr);
   };
+
+  useEffect(() => {
+    setTakePlayer(playerInAMatch);
+    // eslint-disable-next-line
+  }, [playerInAMatch]);
+
   return (
     <div>
       <div>
