@@ -1,8 +1,8 @@
 import styles from "./styles.module.scss";
 
 const CardStat = () => {
-  const nome = "nome " || "Mario";
-  const cognome = "cognome" || "Rossi";
+  const nome = "Nome " || "Mario";
+  const cognome = "Cognome" || "Rossi";
 
   return (
     <div className={styles.CardWrapper}>
