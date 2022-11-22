@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/padel-stat/static/css/main.d10449a6.css",
+    "main.css": "/padel-stat/static/css/main.6bf1813e.css",
     "main.js": "/padel-stat/static/js/main.9771b200.js",
     "static/css/552.bc0136c6.chunk.css": "/padel-stat/static/css/552.bc0136c6.chunk.css",
     "static/js/552.2d84dbf9.chunk.js": "/padel-stat/static/js/552.2d84dbf9.chunk.js",
     "static/js/787.ccae619c.chunk.js": "/padel-stat/static/js/787.ccae619c.chunk.js",
     "index.html": "/padel-stat/index.html",
-    "main.d10449a6.css.map": "/padel-stat/static/css/main.d10449a6.css.map",
+    "main.6bf1813e.css.map": "/padel-stat/static/css/main.6bf1813e.css.map",
     "main.9771b200.js.map": "/padel-stat/static/js/main.9771b200.js.map",
     "552.bc0136c6.chunk.css.map": "/padel-stat/static/css/552.bc0136c6.chunk.css.map",
     "552.2d84dbf9.chunk.js.map": "/padel-stat/static/js/552.2d84dbf9.chunk.js.map",
     "787.ccae619c.chunk.js.map": "/padel-stat/static/js/787.ccae619c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d10449a6.css",
+    "static/css/main.6bf1813e.css",
     "static/js/main.9771b200.js"
   ]
 }
