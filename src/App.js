@@ -2,9 +2,10 @@ import "./App.css";
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { lazy, Suspense, useState } from "react";
 
-import Challenge from "./Pages/challenge";
 import DataPlayer from "../src/DataPlayer/data.json";
 import AddPlayer from "./Pages/addPlayer";
+import SelectPeople from "./Pages/selectPeople";
+import Challeng from "./Pages/challenge";
 const Home = lazy(() => import("./Components/Home"));
 
 function App() {
@@ -38,10 +39,10 @@ function App() {
             }
           />
           <Route
-            path="/challenge"
+            path="/SelectPeople"
             element={
               <Suspense>
-                <Challenge players={players} />
+                <SelectPeople players={players} />
               </Suspense>
             }
           />
@@ -50,6 +51,14 @@ function App() {
             element={
               <Suspense>
                 <AddPlayer players={players} setPlayers={setPlayers} />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/challenge"
+            element={
+              <Suspense>
+                <Challeng />
               </Suspense>
             }
           />

@@ -10,7 +10,7 @@ const Home = () => {
           <Link to="/AddPlayer">New Player</Link>
         </li>
         <li>
-          <Link to="/Challenge">Inizia allenamento</Link>
+          <Link to="/selectPeople">Inizia allenamento</Link>
         </li>
       </ul>
     </div>

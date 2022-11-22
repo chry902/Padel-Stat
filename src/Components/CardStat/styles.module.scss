@@ -1,0 +1,17 @@
+.CardWrapper{
+    width: 100vw;
+    height: 100vh;
+    li{
+        border: 2px solid black;
+    }
+    h3{
+        text-align: center;
+        margin: 1rem 0 1rem 0;
+    }
+    
+    .pointWrapper{
+        display: flex;
+        justify-content: space-around;
+
+    }
+}
