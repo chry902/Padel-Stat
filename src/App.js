@@ -26,7 +26,7 @@ function App() {
     <Router>
       <div className="App">
         <h1>
-          <Link to="/">Padel</Link>
+          <Link to="/">Padel Statz</Link>
         </h1>
 
         <Routes>

@@ -17,7 +17,9 @@ const CardStat = () => {
           <li>
             <h3>Tiro dritto</h3>
             <div className={styles.pointWrapper}>
-              <div className={`${styles.point} ${styles.green}`}>
+              <div
+                className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
+              >
                 <h6>OK</h6>
                 <span>{"0"}</span>
               </div>
@@ -30,7 +32,7 @@ const CardStat = () => {
                 <span>{"0"}</span>
               </div>
               <div
-                className={`${styles.point} ${styles.redColor} ${styles.bRadius}`}
+                className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
                 <span>{"0"}</span>
@@ -41,7 +43,9 @@ const CardStat = () => {
           <li>
             <h3>Tiro rovescio</h3>
             <div className={styles.pointWrapper}>
-              <div className={`${styles.point} ${styles.green}`}>
+              <div
+                className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
+              >
                 <h6>OK</h6>
                 <span>{"0"}</span>
               </div>
@@ -54,7 +58,7 @@ const CardStat = () => {
                 <span>{"0"}</span>
               </div>
               <div
-                className={`${styles.point} ${styles.redColor} ${styles.bRadius}`}
+                className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
                 <span>{"0"}</span>
@@ -65,7 +69,9 @@ const CardStat = () => {
           <li>
             <h3>Vole`</h3>
             <div className={styles.pointWrapper}>
-              <div className={`${styles.point} ${styles.green}`}>
+              <div
+                className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
+              >
                 <h6>OK</h6>
                 <span>{"0"}</span>
               </div>
@@ -78,7 +84,7 @@ const CardStat = () => {
                 <span>{"0"}</span>
               </div>
               <div
-                className={`${styles.point} ${styles.redColor} ${styles.bRadius}`}
+                className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
                 <span>{"0"}</span>
@@ -89,7 +95,9 @@ const CardStat = () => {
           <li>
             <h3>Bandeja</h3>
             <div className={styles.pointWrapper}>
-              <div className={`${styles.point} ${styles.green}`}>
+              <div
+                className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
+              >
                 <h6>OK</h6>
                 <span>{"0"}</span>
               </div>
@@ -102,7 +110,7 @@ const CardStat = () => {
                 <span>{"0"}</span>
               </div>
               <div
-                className={`${styles.point} ${styles.redColor} ${styles.bRadius}`}
+                className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
                 <span>{"0"}</span>
@@ -113,7 +121,9 @@ const CardStat = () => {
           <li>
             <h3>Vibora</h3>
             <div className={styles.pointWrapper}>
-              <div className={`${styles.point} ${styles.green}`}>
+              <div
+                className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
+              >
                 <h6>OK</h6>
                 <span>{"0"}</span>
               </div>
@@ -126,7 +136,7 @@ const CardStat = () => {
                 <span>{"0"}</span>
               </div>
               <div
-                className={`${styles.point} ${styles.redColor} ${styles.bRadius}`}
+                className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
                 <span>{"0"}</span>
@@ -137,7 +147,9 @@ const CardStat = () => {
           <li>
             <h3>Smash</h3>
             <div className={styles.pointWrapper}>
-              <div className={`${styles.point} ${styles.green}`}>
+              <div
+                className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
+              >
                 <h6>OK</h6>
                 <span>{"0"}</span>
               </div>
@@ -150,7 +162,7 @@ const CardStat = () => {
                 <span>{"0"}</span>
               </div>
               <div
-                className={`${styles.point} ${styles.redColor} ${styles.bRadius}`}
+                className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
                 <span>{"0"}</span>
@@ -161,7 +173,9 @@ const CardStat = () => {
           <li>
             <h3>Ciquita</h3>
             <div className={styles.pointWrapper}>
-              <div className={`${styles.point} ${styles.green}`}>
+              <div
+                className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
+              >
                 <h6>OK</h6>
                 <span>{"0"}</span>
               </div>
@@ -174,7 +188,7 @@ const CardStat = () => {
                 <span>{"0"}</span>
               </div>
               <div
-                className={`${styles.point} ${styles.redColor} ${styles.bRadius}`}
+                className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
                 <span>{"0"}</span>
