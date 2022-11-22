@@ -28,31 +28,31 @@ const CardStat = ({ item }) => {
   //
   //
   // bandeja
-  const [banOk, setBanOk] = useState(0);
-  const [banVet, setBanVet] = useState(0);
-  const [banRet, setBanRet] = useState(0);
-  const [banGrigl, setBanGrigl] = useState(0);
-  //
-  //
-  // vibora
-  const [vibOk, setVibOk] = useState(0);
-  const [vibVet, setVibVet] = useState(0);
-  const [vibRet, setVibRet] = useState(0);
-  const [vibGrigl, setVibGrigl] = useState(0);
-  //
-  //
-  // smash
-  const [smaOk, setSmaOk] = useState(0);
-  const [smaVet, setSmaVet] = useState(0);
-  const [smaRet, setSmaRet] = useState(0);
-  const [smaGrigl, setSmaGrigl] = useState(0);
-  //
-  //
-  // ciquita
-  const [ciqOk, setCiqOk] = useState(0);
-  const [ciqVet, setCiqVet] = useState(0);
-  const [ciqRet, setCiqRet] = useState(0);
-  const [ciqGrigl, setCiqGrigl] = useState(0);
+  // const [banOk, setBanOk] = useState(0);
+  // const [banVet, setBanVet] = useState(0);
+  // const [banRet, setBanRet] = useState(0);
+  // const [banGrigl, setBanGrigl] = useState(0);
+  // //
+  // //
+  // // vibora
+  // const [vibOk, setVibOk] = useState(0);
+  // const [vibVet, setVibVet] = useState(0);
+  // const [vibRet, setVibRet] = useState(0);
+  // const [vibGrigl, setVibGrigl] = useState(0);
+  // //
+  // //
+  // // smash
+  // const [smaOk, setSmaOk] = useState(0);
+  // const [smaVet, setSmaVet] = useState(0);
+  // const [smaRet, setSmaRet] = useState(0);
+  // const [smaGrigl, setSmaGrigl] = useState(0);
+  // //
+  // //
+  // // ciquita
+  // const [ciqOk, setCiqOk] = useState(0);
+  // const [ciqVet, setCiqVet] = useState(0);
+  // const [ciqRet, setCiqRet] = useState(0);
+  // const [ciqGrigl, setCiqGrigl] = useState(0);
 
   return (
     <div className={styles.CardWrapper}>
