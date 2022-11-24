@@ -1,10 +1,10 @@
 import styles from "./styles.module.scss";
 import { useState } from "react";
-const CardStat = ({ item }) => {
+const CardStat = ({ item, takeObj }) => {
   const nome = item.nome || "Mario";
   const cognome = item.cognome || "Rossi";
 
-  // Tiri
+  //                   Tiri
   //
   //Tiro dritto
   const [tdOk, setTdOk] = useState(0);
@@ -28,31 +28,106 @@ const CardStat = ({ item }) => {
   //
   //
   // bandeja
-  // const [banOk, setBanOk] = useState(0);
-  // const [banVet, setBanVet] = useState(0);
-  // const [banRet, setBanRet] = useState(0);
-  // const [banGrigl, setBanGrigl] = useState(0);
+  const [banOk, setBanOk] = useState(0);
+  const [banVet, setBanVet] = useState(0);
+  const [banRet, setBanRet] = useState(0);
+  const [banGrigl, setBanGrigl] = useState(0);
   // //
   // //
   // // vibora
-  // const [vibOk, setVibOk] = useState(0);
-  // const [vibVet, setVibVet] = useState(0);
-  // const [vibRet, setVibRet] = useState(0);
-  // const [vibGrigl, setVibGrigl] = useState(0);
+  const [vibOk, setVibOk] = useState(0);
+  const [vibVet, setVibVet] = useState(0);
+  const [vibRet, setVibRet] = useState(0);
+  const [vibGrigl, setVibGrigl] = useState(0);
   // //
   // //
   // // smash
-  // const [smaOk, setSmaOk] = useState(0);
-  // const [smaVet, setSmaVet] = useState(0);
-  // const [smaRet, setSmaRet] = useState(0);
-  // const [smaGrigl, setSmaGrigl] = useState(0);
+  const [smaOk, setSmaOk] = useState(0);
+  const [smaVet, setSmaVet] = useState(0);
+  const [smaRet, setSmaRet] = useState(0);
+  const [smaGrigl, setSmaGrigl] = useState(0);
   // //
   // //
   // // ciquita
-  // const [ciqOk, setCiqOk] = useState(0);
-  // const [ciqVet, setCiqVet] = useState(0);
-  // const [ciqRet, setCiqRet] = useState(0);
-  // const [ciqGrigl, setCiqGrigl] = useState(0);
+  const [ciqOk, setCiqOk] = useState(0);
+  const [ciqVet, setCiqVet] = useState(0);
+  const [ciqRet, setCiqRet] = useState(0);
+  const [ciqGrigl, setCiqGrigl] = useState(0);
+  // eslint-disable-next-line
+  const [endChallenge] = useState({
+    "24/11/2022": [
+      {
+        volè: [
+          {
+            ok: volOk,
+            rete: volRet,
+            vetro: volVet,
+            griglia: trGrigl,
+          },
+        ],
+      },
+      {
+        bandeja: [
+          {
+            ok: banOk,
+            rete: banRet,
+            vetro: banVet,
+            griglia: banGrigl,
+          },
+        ],
+      },
+      {
+        ciquita: [
+          {
+            ok: ciqOk,
+            rete: ciqRet,
+            vetro: ciqVet,
+            griglia: ciqGrigl,
+          },
+        ],
+      },
+      {
+        dritto: [
+          {
+            ok: tdOk,
+            rete: volRet,
+            vetro: tdVet,
+            griglia: tdGrigl,
+          },
+        ],
+      },
+      {
+        rovescio: [
+          {
+            ok: trOk,
+            rete: trRet,
+            vetro: trVet,
+            griglia: trGrigl,
+          },
+        ],
+      },
+      {
+        smash: [
+          {
+            ok: smaOk,
+            rete: smaRet,
+            vetro: smaVet,
+            griglia: smaGrigl,
+          },
+        ],
+      },
+      {
+        pallonetto: [
+          {
+            ok: 0,
+            rete: 0,
+            vetro: 0,
+            griglia: 0,
+          },
+        ],
+      },
+    ],
+  });
 
   return (
     <div className={styles.CardWrapper}>
@@ -70,9 +145,7 @@ const CardStat = ({ item }) => {
             <h3>Tiro dritto</h3>
             <div className={styles.pointWrapper}>
               <div
-                onClick={() => {
-                  setTdOk(tdOk + 1);
-                }}
+                onClick={() => setTdOk(tdOk + 1)}
                 className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
               >
                 <h6>OK</h6>
@@ -80,9 +153,7 @@ const CardStat = ({ item }) => {
               </div>
 
               <div
-                onClick={() => {
-                  setTdVet(tdVet + 1);
-                }}
+                onClick={() => setTdVet(tdVet + 1)}
                 className={`${styles.point} ${styles.redColor}`}
               >
                 <h6>VETRO</h6>
@@ -90,9 +161,7 @@ const CardStat = ({ item }) => {
               </div>
 
               <div
-                onClick={() => {
-                  setTdRet(tdRet + 1);
-                }}
+                onClick={() => setTdRet(tdRet + 1)}
                 className={`${styles.point} ${styles.redColor}`}
               >
                 <h6>RETE</h6>
@@ -100,9 +169,7 @@ const CardStat = ({ item }) => {
               </div>
 
               <div
-                onClick={() => {
-                  setTdGrigl(tdGrigl + 1);
-                }}
+                onClick={() => setTdGrigl(tdGrigl + 1)}
                 className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
@@ -115,9 +182,7 @@ const CardStat = ({ item }) => {
             <h3>Tiro rovescio</h3>
             <div className={styles.pointWrapper}>
               <div
-                onClick={() => {
-                  setTrOk(trOk + 1);
-                }}
+                onClick={() => setTrOk(trOk + 1)}
                 className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
               >
                 <h6>OK</h6>
@@ -125,9 +190,7 @@ const CardStat = ({ item }) => {
               </div>
 
               <div
-                onClick={() => {
-                  setTrVet(trVet + 1);
-                }}
+                onClick={() => setTrVet(trVet + 1)}
                 className={`${styles.point} ${styles.redColor}`}
               >
                 <h6>VETRO</h6>
@@ -135,18 +198,14 @@ const CardStat = ({ item }) => {
               </div>
 
               <div
-                onClick={() => {
-                  setTrRet(trRet + 1);
-                }}
+                onClick={() => setTrRet(trRet + 1)}
                 className={`${styles.point} ${styles.redColor}`}
               >
                 <h6>RETE</h6>
                 <span>{trRet}</span>
               </div>
               <div
-                onClick={() => {
-                  setTrGrigl(trGrigl + 1);
-                }}
+                onClick={() => setTrGrigl(trGrigl + 1)}
                 className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
@@ -159,9 +218,7 @@ const CardStat = ({ item }) => {
             <h3>Vole`</h3>
             <div className={styles.pointWrapper}>
               <div
-                onClick={() => {
-                  setVolOk(volOk + 1);
-                }}
+                onClick={() => setVolOk(volOk + 1)}
                 className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
               >
                 <h6>OK</h6>
@@ -169,9 +226,7 @@ const CardStat = ({ item }) => {
               </div>
 
               <div
-                onClick={() => {
-                  setVolVet(volVet + 1);
-                }}
+                onClick={() => setVolVet(volVet + 1)}
                 className={`${styles.point} ${styles.redColor}`}
               >
                 <h6>VETRO</h6>
@@ -179,18 +234,14 @@ const CardStat = ({ item }) => {
               </div>
 
               <div
-                onClick={() => {
-                  setVolRet(volRet + 1);
-                }}
+                onClick={() => setVolRet(volRet + 1)}
                 className={`${styles.point} ${styles.redColor}`}
               >
                 <h6>RETE</h6>
                 <span>{volRet}</span>
               </div>
               <div
-                onClick={() => {
-                  setVolGrigl(volGrigl + 1);
-                }}
+                onClick={() => setVolGrigl(volGrigl + 1)}
                 className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
@@ -203,24 +254,35 @@ const CardStat = ({ item }) => {
             <h3>Bandeja</h3>
             <div className={styles.pointWrapper}>
               <div
+                onClick={() => setBanOk(banOk + 1)}
                 className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
               >
                 <h6>OK</h6>
-                <span>{"0"}</span>
+                <span>{banOk}</span>
               </div>
-              <div className={`${styles.point} ${styles.redColor}`}>
-                <h6>VETRO</h6>
-                <span>{"0"}</span>
-              </div>
-              <div className={`${styles.point} ${styles.redColor}`}>
-                <h6>RETE</h6>
-                <span>{"0"}</span>
-              </div>
+
               <div
+                onClick={() => setBanVet(banVet + 1)}
+                className={`${styles.point} ${styles.redColor}`}
+              >
+                <h6>VETRO</h6>
+                <span>{banVet}</span>
+              </div>
+
+              <div
+                onClick={() => setBanRet(banRet + 1)}
+                className={`${styles.point} ${styles.redColor}`}
+              >
+                <h6>RETE</h6>
+                <span>{banRet}</span>
+              </div>
+
+              <div
+                onClick={() => setBanGrigl(banGrigl + 1)}
                 className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
-                <span>{"0"}</span>
+                <span>{banGrigl}</span>
               </div>
             </div>
           </li>
@@ -229,24 +291,32 @@ const CardStat = ({ item }) => {
             <h3>Vibora</h3>
             <div className={styles.pointWrapper}>
               <div
+                onClick={() => setVibOk(vibOk + 1)}
                 className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
               >
                 <h6>OK</h6>
-                <span>{"0"}</span>
-              </div>
-              <div className={`${styles.point} ${styles.redColor}`}>
-                <h6>VETRO</h6>
-                <span>{"0"}</span>
-              </div>
-              <div className={`${styles.point} ${styles.redColor}`}>
-                <h6>RETE</h6>
-                <span>{"0"}</span>
+                <span>{vibOk}</span>
               </div>
               <div
+                onClick={() => setVibVet(vibVet + 1)}
+                className={`${styles.point} ${styles.redColor}`}
+              >
+                <h6>VETRO</h6>
+                <span>{vibVet}</span>
+              </div>
+              <div
+                onClick={() => setVibRet(vibRet + 1)}
+                className={`${styles.point} ${styles.redColor}`}
+              >
+                <h6>RETE</h6>
+                <span>{vibRet}</span>
+              </div>
+              <div
+                onClick={() => setVibGrigl(vibGrigl + 1)}
                 className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
-                <span>{"0"}</span>
+                <span>{vibGrigl}</span>
               </div>
             </div>
           </li>
@@ -255,24 +325,32 @@ const CardStat = ({ item }) => {
             <h3>Smash</h3>
             <div className={styles.pointWrapper}>
               <div
+                onClick={() => setSmaOk(smaOk + 1)}
                 className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
               >
                 <h6>OK</h6>
-                <span>{"0"}</span>
-              </div>
-              <div className={`${styles.point} ${styles.redColor}`}>
-                <h6>VETRO</h6>
-                <span>{"0"}</span>
-              </div>
-              <div className={`${styles.point} ${styles.redColor}`}>
-                <h6>RETE</h6>
-                <span>{"0"}</span>
+                <span>{smaOk}</span>
               </div>
               <div
+                onClick={() => setSmaVet(smaVet + 1)}
+                className={`${styles.point} ${styles.redColor}`}
+              >
+                <h6>VETRO</h6>
+                <span>{smaVet}</span>
+              </div>
+              <div
+                onClick={() => setSmaRet(smaRet + 1)}
+                className={`${styles.point} ${styles.redColor}`}
+              >
+                <h6>RETE</h6>
+                <span>{smaRet}</span>
+              </div>
+              <div
+                onClick={() => setSmaGrigl(smaGrigl + 1)}
                 className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
-                <span>{"0"}</span>
+                <span>{smaGrigl}</span>
               </div>
             </div>
           </li>
@@ -281,29 +359,46 @@ const CardStat = ({ item }) => {
             <h3>Ciquita</h3>
             <div className={styles.pointWrapper}>
               <div
+                onClick={() => setCiqOk(ciqOk + 1)}
                 className={`${styles.point} ${styles.green} ${styles.bRadiusL}`}
               >
                 <h6>OK</h6>
-                <span>{"0"}</span>
+                <span>{ciqOk}</span>
               </div>
-              <div className={`${styles.point} ${styles.redColor}`}>
+
+              <div
+                onClick={() => setCiqVet(ciqVet + 1)}
+                className={`${styles.point} ${styles.redColor}`}
+              >
                 <h6>VETRO</h6>
-                <span>{"0"}</span>
-              </div>
-              <div className={`${styles.point} ${styles.redColor}`}>
-                <h6>RETE</h6>
-                <span>{"0"}</span>
+                <span>{ciqVet}</span>
               </div>
               <div
+                onClick={() => setCiqRet(ciqRet + 1)}
+                className={`${styles.point} ${styles.redColor}`}
+              >
+                <h6>RETE</h6>
+                <span>{ciqRet}</span>
+              </div>
+              <div
+                onClick={() => setCiqGrigl(ciqGrigl + 1)}
                 className={`${styles.point} ${styles.redColor} ${styles.bRadiusR}`}
               >
                 <h6>GRIGLIA</h6>
-                <span>{"0"}</span>
+                <span>{ciqGrigl}</span>
               </div>
             </div>
           </li>
         </ul>
       </div>
+      {/* <input type="submit" value="End the challenge" /> */}
+      <button
+        onClick={(e) => {
+          takeObj(endChallenge, item);
+        }}
+      >
+        End the Challeng
+      </button>
     </div>
   );
 };

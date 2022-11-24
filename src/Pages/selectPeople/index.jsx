@@ -1,31 +1,14 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import styles from "./styles.module.scss";
 
-const SelectPeople = ({ players, setTakePlayer }) => {
-  const [playerInAMatch, setPlayerInAMatch] = useState([]);
+const SelectPeople = ({
+  players,
+  setTakePlayer,
+  sendPlayer,
+  removePlayer,
+  playerInAMatch,
+}) => {
   // const [takePlayer, setTakePlayer] = useState('')
-
-  const sendPlayer = (ply) => {
-    console.log("ply", ply.id);
-    const alreadyExist = playerInAMatch.find((el) => el.phone === ply.phone);
-    console.log("alreadyExist", alreadyExist);
-    if (!alreadyExist) {
-      setPlayerInAMatch((prev) => [...prev, ply]);
-      console.log("setPlayerMatch", playerInAMatch);
-    }
-  };
-  const removePlayer = (ply) => {
-    console.log("remove", ply);
-    const refreshArr = playerInAMatch.filter((el) => el.phone !== ply.phone);
-    console.log("newArr", refreshArr);
-    setPlayerInAMatch(refreshArr);
-  };
-
-  useEffect(() => {
-    setTakePlayer(playerInAMatch);
-    // eslint-disable-next-line
-  }, [playerInAMatch]);
 
   return (
     <div>

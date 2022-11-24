@@ -6,19 +6,22 @@ const AddPlayer = ({ players, setPlayers }) => {
   const [playerName, setPlayerName] = useState("");
   const [playerSurname, setPlayerSurname] = useState("");
   const [playerPhoneNumber, setPlayerPhoneNumber] = useState("");
-  const [playerAge, setPlayerAge] = useState("");
+  // const [playerAge, setPlayerAge] = useState("");
+
   // const [player, setPlayer] = useState("");
   const addPlayer = (e) => {
     e.preventDefault();
-
+    const id = players.length + 1;
+    console.log("id-from add", id);
     const newListPlayers = players;
 
     const newPlayer = {
+      id: id,
       nome: playerName,
       cognome: playerSurname,
-      age: playerAge,
-      phone: playerPhoneNumber,
-      data: "",
+      // age: playerAge,
+      phone: parseInt(playerPhoneNumber),
+      data: [],
     };
 
     newListPlayers.push(newPlayer);
@@ -26,16 +29,13 @@ const AddPlayer = ({ players, setPlayers }) => {
 
     setPlayerName("");
     setPlayerSurname("");
-    setPlayerAge("");
+    // setPlayerAge("");
     setPlayerPhoneNumber("");
     // setPlayer({
     //   name: playerName,
     //   cognome: playerSurname,
     //   age: playerAge,
     // });
-
-    // console.log("player", player);
-    // setPlayers((prev) => [...players, player]);
   };
 
   return (

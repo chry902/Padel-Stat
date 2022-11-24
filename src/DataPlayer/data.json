@@ -1,6 +1,7 @@
 
    [
-    {"id":1,
+    {
+        "id":1,
         "nome":"Chrisr",
         "cognome":"Tario",
         "phone":342734453,
@@ -10,49 +11,49 @@
                         "volè":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "bandeja":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     { 
                         "ciquita":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "dritto":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "rovescio":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     { 
                         "smash":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "pallonetto":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0}]}
                 ]},
             {"10/11/2022":[
@@ -60,54 +61,55 @@
                         "volè":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "bandeja":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     { 
                         "ciquita":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "dritto":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "rovescio":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     { 
                         "smash":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "pallonetto":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0}]}
                 ]}
             ]
         },
-    {"id":2,
+    {
+        "id":2,
         "nome":"Erick",
         "cognome":"Muro",
         "phone":3423223,
@@ -117,49 +119,49 @@
                         "volè":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "bandeja":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     { 
                         "ciquita":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "dritto":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "rovescio":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     { 
                         "smash":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "pallonetto":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0}]}
                 ]},
             {"10/11/2022":[
@@ -167,49 +169,49 @@
                         "volè":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "bandeja":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     { 
                         "ciquita":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "dritto":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "rovescio":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     { 
                         "smash":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0
                 }]},
                     {
                         "pallonetto":[{
                             "ok":0,
                             "rete":0,
-                            "fondo":0,
+                            "vetro":0,
                             "griglia":0}]}
                 ]}
             ]
