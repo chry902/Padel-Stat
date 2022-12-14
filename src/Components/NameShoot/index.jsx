@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import PoinComponent from "../PointComponent";
-import { useState } from "react";
+// import { useState } from "react";
 
 const NameShoot = ({ tiro }) => {
   // const [punto, setPunto] = useState(tiro.punto);
