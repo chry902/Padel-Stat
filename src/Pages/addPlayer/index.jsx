@@ -21,7 +21,7 @@ const AddPlayer = ({ players, setPlayers }) => {
       cognome: playerSurname,
       // age: playerAge,
       phone: parseInt(playerPhoneNumber),
-      data: [],
+      storico: [],
     };
 
     newListPlayers.push(newPlayer);
@@ -81,6 +81,7 @@ const AddPlayer = ({ players, setPlayers }) => {
           name="playerAge"
           required
         /> */}
+        {/* <input type="time" /> */}
         <input type="submit" value="Send it!" />
       </form>
     </div>
