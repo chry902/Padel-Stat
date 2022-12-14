@@ -23,7 +23,9 @@ function App() {
 
   useEffect(() => {
     Get().then((data) =>
-      setTime(data.datetime.split("T")[0].split("-").reverse().join("-"))
+      setTime(
+        data.datetime.split("T")[0].split("-").reverse().join("-").toString()
+      )
     );
   }, []);
 
