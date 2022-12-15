@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/padel-stat/static/css/main.0a18b256.css",
-    "main.js": "/padel-stat/static/js/main.b9cb207c.js",
+    "main.js": "/padel-stat/static/js/main.d41411d4.js",
     "static/css/552.bc0136c6.chunk.css": "/padel-stat/static/css/552.bc0136c6.chunk.css",
     "static/js/552.2d84dbf9.chunk.js": "/padel-stat/static/js/552.2d84dbf9.chunk.js",
     "static/js/533.254d388c.chunk.js": "/padel-stat/static/js/533.254d388c.chunk.js",
-    "static/js/13.5f0b8c1b.chunk.js": "/padel-stat/static/js/13.5f0b8c1b.chunk.js",
-    "static/css/16.4ee17236.chunk.css": "/padel-stat/static/css/16.4ee17236.chunk.css",
-    "static/js/16.1af6d10e.chunk.js": "/padel-stat/static/js/16.1af6d10e.chunk.js",
+    "static/js/13.85b0c931.chunk.js": "/padel-stat/static/js/13.85b0c931.chunk.js",
+    "static/css/935.fd620ce0.chunk.css": "/padel-stat/static/css/935.fd620ce0.chunk.css",
+    "static/js/935.3897c214.chunk.js": "/padel-stat/static/js/935.3897c214.chunk.js",
     "static/js/787.ccae619c.chunk.js": "/padel-stat/static/js/787.ccae619c.chunk.js",
     "index.html": "/padel-stat/index.html",
     "main.0a18b256.css.map": "/padel-stat/static/css/main.0a18b256.css.map",
-    "main.b9cb207c.js.map": "/padel-stat/static/js/main.b9cb207c.js.map",
+    "main.d41411d4.js.map": "/padel-stat/static/js/main.d41411d4.js.map",
     "552.bc0136c6.chunk.css.map": "/padel-stat/static/css/552.bc0136c6.chunk.css.map",
     "552.2d84dbf9.chunk.js.map": "/padel-stat/static/js/552.2d84dbf9.chunk.js.map",
     "533.254d388c.chunk.js.map": "/padel-stat/static/js/533.254d388c.chunk.js.map",
-    "13.5f0b8c1b.chunk.js.map": "/padel-stat/static/js/13.5f0b8c1b.chunk.js.map",
-    "16.4ee17236.chunk.css.map": "/padel-stat/static/css/16.4ee17236.chunk.css.map",
-    "16.1af6d10e.chunk.js.map": "/padel-stat/static/js/16.1af6d10e.chunk.js.map",
+    "13.85b0c931.chunk.js.map": "/padel-stat/static/js/13.85b0c931.chunk.js.map",
+    "935.fd620ce0.chunk.css.map": "/padel-stat/static/css/935.fd620ce0.chunk.css.map",
+    "935.3897c214.chunk.js.map": "/padel-stat/static/js/935.3897c214.chunk.js.map",
     "787.ccae619c.chunk.js.map": "/padel-stat/static/js/787.ccae619c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a18b256.css",
-    "static/js/main.b9cb207c.js"
+    "static/js/main.d41411d4.js"
   ]
 }
