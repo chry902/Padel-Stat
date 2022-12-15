@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useId } from "react";
 
 // import styles from "./styles.module.scss";
 
@@ -6,12 +6,11 @@ const AddPlayer = ({ players, setPlayers }) => {
   const [playerName, setPlayerName] = useState("");
   const [playerSurname, setPlayerSurname] = useState("");
   const [playerPhoneNumber, setPlayerPhoneNumber] = useState("");
-  // const [playerAge, setPlayerAge] = useState("");
+  const uniqId = useId();
 
-  // const [player, setPlayer] = useState("");
   const addPlayer = (e) => {
     e.preventDefault();
-    const id = players.length + 1;
+    const id = uniqId;
     console.log("id-from add", id);
     const newListPlayers = players;
 
