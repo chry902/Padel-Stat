@@ -4,19 +4,16 @@ import NameShoot from "../NameShoot";
 import { useState } from "react";
 
 const CardStat = ({ item, removePlayer }) => {
-  const { storico } = item;
-  storico.reverse();
   const [indx] = useState(item.storico.length - 1);
   const [training] = useState(item.storico[indx].allenamento);
-  const [prova] = useState(storico);
-  prova.reverse();
-  const test = (ply) => {
-    setTimeout(() => {
-      console.log("eliminato");
-      removePlayer(ply, "", "");
-    }, "2000");
-  };
-  console.log("prova", prova.reverse());
+
+  // const test = (ply) => {
+  //   setTimeout(() => {
+  //     console.log("eliminato");
+  //     removePlayer(ply, "", "");
+  //   }, "2000");
+  // };
+
   return (
     <div className={styles.CardWrapper}>
       <div>
@@ -38,7 +35,7 @@ const CardStat = ({ item, removePlayer }) => {
         </ul>
       </div>
 
-      <button onClick={() => test(item)}>End the Challeng</button>
+      {/* <button onClick={() => test(item)}>End the Challeng</button> */}
     </div>
   );
 };

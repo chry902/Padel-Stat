@@ -3,11 +3,7 @@ import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { lazy, Suspense, useState, useEffect } from "react";
 
 import DataPlayer from "../src/DataPlayer/data.json";
-// import AddPlayer from "./Pages/addPlayer";
-// import SelectPeople from "./Pages/selectPeople";
-// import Challeng from "./Pages/challenge";
 import Get from "./Components/Time";
-// import MyTime from "./Components/Time";
 
 const Home = lazy(() => import("./Components/Home"));
 const AddPlayer = lazy(() => import("./Pages/addPlayer"));
@@ -15,12 +11,15 @@ const SelectPeople = lazy(() => import("./Pages/selectPeople"));
 const Challeng = lazy(() => import("./Pages/challenge"));
 
 function App() {
+  // ----------array file json
   const [players, setPlayers] = useState(DataPlayer);
-  // const [takePlayer, setTakePlayer] = useState("");
-  const [time, setTime] = useState([]);
+  // -------------------- array player selezionati per allenamento
   const [playerInAMatch, setPlayerInAMatch] = useState([]);
+  // -------------------- array player allenamento
   const [peopleTraining, setPeopleTraining] = useState("");
 
+  // --------------------fetch per la data dell allenamento
+  const [time, setTime] = useState([]);
   useEffect(() => {
     Get().then((data) =>
       setTime(
@@ -29,9 +28,9 @@ function App() {
     );
   }, []);
 
-  console.log("--------players", players);
+  console.log("--------players", peopleTraining);
 
-  // //---------------------------------------------------
+  // //----------------- seleziona i giocatori ed efettua un controllo ed aggiunge obj allenamento  ----------------------------------
   const sendPlayer = (ply) => {
     const alreadyExist = playerInAMatch.find((el) => el.id === ply.id);
     const pointExist = ply.storico.find((el) => el.data === time);
@@ -217,20 +216,16 @@ function App() {
       setPlayerInAMatch((prev) => [...prev, ply]);
     }
   };
+  // ----------------aggiorna array giocatori----------------------------
+  useEffect(() => {
+    setPeopleTraining(playerInAMatch);
+  }, [playerInAMatch]);
 
+  // -----------------rimuovi i giocatoriselezionati --------------------
   const removePlayer = (ply) => {
     console.log("eliminato>>>>>>>>>", ply, playerInAMatch);
-    // const refreshArr = playerInAMatch.filter((el) => el.id !== ply.id);
     setPlayerInAMatch(playerInAMatch.filter((el) => el.id !== ply.id));
-
-    console.log("New players.......>", players);
-    setPeopleTraining(playerInAMatch);
   };
-  useEffect(() => {
-    setTimeout(() => {
-      setPeopleTraining(playerInAMatch);
-    }, "2000");
-  }, [playerInAMatch]);
 
   return (
     <Router>
@@ -277,8 +272,7 @@ function App() {
               <Suspense>
                 <Challeng
                   peopleTraining={peopleTraining}
-                  removePlayer={removePlayer}
-                  players={players}
+                  setPlayerInAMatch={setPlayerInAMatch}
                 />
               </Suspense>
             }

@@ -27,7 +27,7 @@ const SelectPeople = ({
           {playerInAMatch &&
             playerInAMatch.map((item, id) => (
               <li key={id} onClick={() => removePlayer(item)}>
-                {item.nome} {item.cognome} <span>X</span>
+                {item.nome} {item.cognome} {item.phone} <span>X</span>
               </li>
             ))}
         </ul>
