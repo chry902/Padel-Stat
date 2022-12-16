@@ -1,14 +1,18 @@
 .SelectPeopleContainer{
     display: flex;
     flex-direction: column;
-   justify-content: space-around;
+    justify-content: space-around;
+    align-items: center;
     .SelectPeopleWrapper{
         h2{
             margin-bottom: 2rem;
+            color: var(--ball-color);
         }
 
     }
     .playerInAMathcWrapper{
+       h2{
         margin: 2rem 0;
+       }
     }
 }

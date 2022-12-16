@@ -16,7 +16,9 @@ const SelectPeople = ({
           {players &&
             players.map((item, id) => (
               <li key={id} onClick={() => sendPlayer(item)}>
-                {item.nome} {item.cognome} {item.phone}
+                <h4>
+                  {item.nome} {item.cognome} {item.phone} <span>X</span>
+                </h4>
               </li>
             ))}
         </ul>
@@ -27,7 +29,9 @@ const SelectPeople = ({
           {playerInAMatch &&
             playerInAMatch.map((item, id) => (
               <li key={id} onClick={() => removePlayer(item)}>
-                {item.nome} {item.cognome} {item.phone} <span>X</span>
+                <h4>
+                  {item.nome} {item.cognome} {item.phone} <span>X</span>
+                </h4>
               </li>
             ))}
         </ul>
@@ -37,7 +41,7 @@ const SelectPeople = ({
           <Link to="/challenge">Go challenge</Link>
         </div>
         <div>
-          <Link to="/"> Return to Home </Link>
+          <Link to="/"> ⬅︎Return to Home </Link>
         </div>
       </>
     </div>

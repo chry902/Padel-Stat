@@ -1,5 +1,5 @@
 import "./App.scss";
-import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import React, { lazy, Suspense, useState, useEffect } from "react";
 import DataPlayer from "../src/DataPlayer/data.json";
 import Get from "./Components/Time";
@@ -32,6 +32,7 @@ function App() {
 
   // //----------------- seleziona i giocatori ed efettua un controllo ed aggiunge obj allenamento  ----------------------------------
   const sendPlayer = (ply) => {
+    console.log("ply", ply);
     const alreadyExist = playerInAMatch.find((el) => el.id === ply.id);
     const pointExist = ply.storico.find((el) => el.data === time);
 
@@ -232,9 +233,7 @@ function App() {
       <div className="App">
         <div className="container">
           <header className="headerContainer">
-            <h1>
-              <Link to="/">Padel Statz</Link>
-            </h1>
+            <h1>Padel Statz</h1>
             <div className="logoWrapper">
               <img src={logoStatz} alt="logo pagina" />
             </div>

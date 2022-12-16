@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 // import { useEffect, useState } from "react";
 
-const Challeng = ({ peopleTraining, setPeopleTraining, setPlayerInAMatch }) => {
+const Challeng = ({ peopleTraining, setPlayerInAMatch }) => {
   const [delControll, setDelControll] = useState(false);
   const navigate = useNavigate();
   // ----------------controllo modale ---------------------
@@ -20,7 +20,7 @@ const Challeng = ({ peopleTraining, setPeopleTraining, setPlayerInAMatch }) => {
   // -----------------terminal allenamento svuotando array torna home --------------------
   const removeTraining = (e) => {
     e.preventDefault();
-    setPlayerInAMatch("");
+    setPlayerInAMatch([]);
     navigate("/");
   };
   return (
