@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-// import styles from "./styles.module.scss";
+import styles from "./styles.module.scss";
 
 const SelectPeople = ({
   players,
@@ -9,8 +9,8 @@ const SelectPeople = ({
   sendPlayer,
 }) => {
   return (
-    <div>
-      <div>
+    <div className={styles.SelectPeopleContainer}>
+      <div className={styles.SelectPeopleWrapper}>
         <h2>Select players</h2>
         <ul>
           {players &&
@@ -21,7 +21,7 @@ const SelectPeople = ({
             ))}
         </ul>
       </div>
-      <div>
+      <div className={styles.playerInAMathcWrapper}>
         <h2>Player in a match </h2>
         <ul>
           {playerInAMatch &&
@@ -32,12 +32,14 @@ const SelectPeople = ({
             ))}
         </ul>
       </div>
-      <div>
-        <Link to="/challenge">Go challenge</Link>
-      </div>
-      <div>
-        <Link to="/"> Return to Home </Link>
-      </div>
+      <>
+        <div>
+          <Link to="/challenge">Go challenge</Link>
+        </div>
+        <div>
+          <Link to="/"> Return to Home </Link>
+        </div>
+      </>
     </div>
   );
 };

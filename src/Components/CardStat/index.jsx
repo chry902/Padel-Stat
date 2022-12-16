@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import NameShoot from "../NameShoot";
 import { useState } from "react";
 
-const CardStat = ({ item, removePlayer }) => {
+const CardStat = ({ item }) => {
   const [indx] = useState(item.storico.length - 1);
   const [training] = useState(item.storico[indx].allenamento);
 

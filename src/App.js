@@ -1,9 +1,10 @@
-import "./App.css";
+import "./App.scss";
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { lazy, Suspense, useState, useEffect } from "react";
-
 import DataPlayer from "../src/DataPlayer/data.json";
 import Get from "./Components/Time";
+import logoStatz from "./Images/logoStatz.png";
+import capoPadel from "./Images/campoPadel.jpeg";
 
 const Home = lazy(() => import("./Components/Home"));
 const AddPlayer = lazy(() => import("./Pages/addPlayer"));
@@ -230,54 +231,62 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h1>
-          <Link to="/">Padel Statz</Link>
-        </h1>
-
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Suspense>
-                <Home />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/SelectPeople"
-            element={
-              <Suspense>
-                <SelectPeople
-                  players={players}
-                  time={time}
-                  removePlayer={removePlayer}
-                  sendPlayer={sendPlayer}
-                  playerInAMatch={playerInAMatch}
-                  setPlayerInAMatch={setPlayerInAMatch}
-                />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/AddPlayer"
-            element={
-              <Suspense>
-                <AddPlayer players={players} setPlayers={setPlayers} />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/challenge"
-            element={
-              <Suspense>
-                <Challeng
-                  peopleTraining={peopleTraining}
-                  setPlayerInAMatch={setPlayerInAMatch}
-                />
-              </Suspense>
-            }
-          />
-        </Routes>
+        <div className="container">
+          <header className="headerContainer">
+            <h1>
+              <Link to="/">Padel Statz</Link>
+            </h1>
+            <div className="logoWrapper">
+              <img src={logoStatz} />
+            </div>
+          </header>
+          <body>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <Suspense>
+                    <Home />
+                  </Suspense>
+                }
+              />
+              <Route
+                path="/SelectPeople"
+                element={
+                  <Suspense>
+                    <SelectPeople
+                      players={players}
+                      time={time}
+                      removePlayer={removePlayer}
+                      sendPlayer={sendPlayer}
+                      playerInAMatch={playerInAMatch}
+                      setPlayerInAMatch={setPlayerInAMatch}
+                    />
+                  </Suspense>
+                }
+              />
+              <Route
+                path="/AddPlayer"
+                element={
+                  <Suspense>
+                    <AddPlayer players={players} setPlayers={setPlayers} />
+                  </Suspense>
+                }
+              />
+              <Route
+                path="/challenge"
+                element={
+                  <Suspense>
+                    <Challeng
+                      peopleTraining={peopleTraining}
+                      setPlayerInAMatch={setPlayerInAMatch}
+                    />
+                  </Suspense>
+                }
+              />
+            </Routes>
+          </body>
+        </div>
       </div>
     </Router>
   );

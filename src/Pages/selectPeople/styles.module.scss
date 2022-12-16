@@ -1,0 +1,14 @@
+.SelectPeopleContainer{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+    .SelectPeopleWrapper{
+        h2{
+            margin-bottom: 2rem;
+        }
+
+    }
+    .playerInAMathcWrapper{
+        margin: 2rem 0;
+    }
+}
