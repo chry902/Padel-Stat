@@ -18,7 +18,7 @@ const PoinComponent = ({ item }) => {
       }`}
     >
       <h6>{item.name}</h6>
-      <span>{valuePoint}</span>
+      <h6>{valuePoint}</h6>
     </div>
   );
 };
