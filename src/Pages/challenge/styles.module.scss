@@ -17,6 +17,8 @@
                 outline-style: auto;
                 width: 145px;
                 height: 39px;
+                border: none;
+                border-radius: 8px;
             }
         }
     }
@@ -39,9 +41,19 @@
             color: white;
             margin-top: 6em;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             flex-direction: column;
+            button{
+                font-size: medium;
+                color: #002fff;
+                background-color: #4aff01;
+                outline-style: auto;
+                width: 100px;
+                height: 20px;
+                border: none;
+                border-radius: 8px;
+            }
         }
         
         

@@ -32,8 +32,18 @@ const Challeng = ({ peopleTraining, setPlayerInAMatch }) => {
       >
         <div className={styles.confirmeModal}>
           vuoi terminare questo allenamento ?
-          <button onClick={(e) => controllEnd(e)}>NO!</button>
-          <button onClick={(e) => removeTraining(e)}>SI!</button>
+          <button
+            className={styles.buttonStayles}
+            onClick={(e) => controllEnd(e)}
+          >
+            NO!
+          </button>
+          <button
+            className={styles.buttonStayles}
+            onClick={(e) => removeTraining(e)}
+          >
+            SI!
+          </button>
         </div>
       </div>
       <div className={styles.linkWrapper}>
