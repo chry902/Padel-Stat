@@ -234,7 +234,7 @@ function App() {
         <div className="container">
           <header className="headerContainer">
             <div>
-              <img src={padelBall} />
+              <img src={padelBall} alt="icona palla tennis" />
             </div>
             <h1>Padel Statz</h1>
             <div className="logoWrapper">
