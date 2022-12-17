@@ -1,6 +1,6 @@
 import { useState, useId } from "react";
-
-// import styles from "./styles.module.scss";
+import { Link } from "react-router-dom";
+import styles from "./styles.module.scss";
 
 const AddPlayer = ({ players, setPlayers }) => {
   const [playerName, setPlayerName] = useState("");
@@ -38,9 +38,9 @@ const AddPlayer = ({ players, setPlayers }) => {
   };
 
   return (
-    <div>
+    <div className={styles.formContainer}>
       <h1>Add player</h1>
-      <form onSubmit={addPlayer}>
+      <form className={styles.formStyles} onSubmit={addPlayer}>
         <label>Name</label>
         <input
           value={playerName}
@@ -81,8 +81,11 @@ const AddPlayer = ({ players, setPlayers }) => {
           required
         /> */}
         {/* <input type="time" /> */}
-        <input type="submit" value="Send it!" />
+        <input className={styles.button} type="submit" value="Send it!" />
       </form>
+      <div>
+        <Link to="/"> ⬅︎ Return to select people </Link>
+      </div>
     </div>
   );
 };

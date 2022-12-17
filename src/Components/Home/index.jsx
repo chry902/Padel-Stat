@@ -7,7 +7,7 @@ const Home = () => {
     <div className={styles.home_container}>
       <ul>
         <li>
-          <Link to="/AddPlayer">New Player</Link>
+          <Link to="/AddPlayer"> Ad new Player</Link>
         </li>
         <li>
           <Link to="/selectPeople">Start training</Link>

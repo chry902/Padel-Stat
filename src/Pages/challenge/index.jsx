@@ -25,10 +25,6 @@ const Challeng = ({ peopleTraining, setPlayerInAMatch }) => {
   };
   return (
     <div className={styles.cardContain}>
-      <div>
-        <Link to="/SelectPeople"> ⬅︎ Return to select people </Link>
-      </div>
-
       <div
         className={`${styles.modal} 
         ${delControll === true ? styles.modalOn : ""}
@@ -40,9 +36,14 @@ const Challeng = ({ peopleTraining, setPlayerInAMatch }) => {
           <button onClick={(e) => removeTraining(e)}>SI!</button>
         </div>
       </div>
+      <div className={styles.linkWrapper}>
+        <div>
+          <Link to="/SelectPeople"> ⬅︎ Return to select people </Link>
+        </div>
 
-      <div>
-        <button onClick={(e) => controllEnd(e)}>End the training</button>
+        <div className={styles.buttonStayles}>
+          <button onClick={(e) => controllEnd(e)}>End the training</button>
+        </div>
       </div>
 
       <div className={styles.card_Wrapper}>
