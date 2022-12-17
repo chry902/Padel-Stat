@@ -17,7 +17,7 @@ const SelectPeople = ({
             players.map((item, id) => (
               <li key={id} onClick={() => sendPlayer(item)}>
                 <h4>
-                  {item.nome} {item.cognome} {item.phone} <
+                  {item.nome} {item.cognome} {item.phone}
                 </h4>
               </li>
             ))}
