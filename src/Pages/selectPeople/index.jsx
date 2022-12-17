@@ -17,7 +17,9 @@ const SelectPeople = ({
             players.map((item, id) => (
               <li key={id} onClick={() => sendPlayer(item)}>
                 <h4>
-                  {item.nome} {item.cognome} {item.phone}
+                  <a>
+                    {item.nome} {item.cognome} {item.phone}{" "}
+                  </a>
                 </h4>
               </li>
             ))}
@@ -30,7 +32,9 @@ const SelectPeople = ({
             playerInAMatch.map((item, id) => (
               <li key={id} onClick={() => removePlayer(item)}>
                 <h4>
-                  {item.nome} {item.cognome} {item.phone} <span>X</span>
+                  <a>
+                    {item.nome} {item.cognome} {item.phone} <span>X</span>{" "}
+                  </a>
                 </h4>
               </li>
             ))}
