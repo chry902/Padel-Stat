@@ -2,7 +2,8 @@ import "./App.scss";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import React, { lazy, Suspense, useState, useEffect } from "react";
 import DataPlayer from "../src/DataPlayer/data.json";
-import Get from "./Components/Time";
+
+// import Get from "./Components/Time";
 import logoStatz from "./Images/logoStatz.png";
 import padelBall from "./Images/pallaTennis.png";
 
@@ -20,14 +21,15 @@ function App() {
   const [peopleTraining, setPeopleTraining] = useState("");
 
   // --------------------fetch per la data dell allenamento
-  const [time, setTime] = useState([]);
-  useEffect(() => {
-    Get().then((data) =>
-      setTime(
-        data.datetime.split("T")[0].split("-").reverse().join("-").toString()
-      )
-    );
-  }, []);
+  // eslint-disable-next-line
+  const [time, setTime] = useState("12/12/20022");
+  // useEffect(() => {
+  //   Get().then((data) =>
+  //     setTime(
+  //       data.datetime.split("T")[0].split("-").reverse().join("-").toString()
+  //     )
+  //   );
+  // }, []);
 
   console.log("--------players", peopleTraining);
 
@@ -242,7 +244,7 @@ function App() {
               <img src={logoStatz} alt="logo pagina" />
             </div>
           </header>
-          <body>
+          <div className="body">
             <Routes>
               <Route
                 path="/"
@@ -287,7 +289,7 @@ function App() {
                 }
               />
             </Routes>
-          </body>
+          </div>
         </div>
       </div>
     </Router>
