@@ -10,38 +10,42 @@ const SelectPeople = ({
 }) => {
   return (
     <div className={styles.SelectPeopleContainer}>
-      <div className={styles.SelectPeopleWrapper}>
-        <h2>Select players</h2>
-        <ul>
-          {players &&
-            players.map((item, id) => (
-              <li key={id} onClick={() => sendPlayer(item)}>
-                <h4>
-                  {item.nome} {item.cognome} {item.phone}{" "}
-                </h4>
-              </li>
-            ))}
-        </ul>
+      <div className={styles.PeopleWrapper}>
+        <div className={styles.SelectPeopleWrapper}>
+          <h2>Select players</h2>
+          <ul>
+            {players &&
+              players.map((item, id) => (
+                <li key={id} onClick={() => sendPlayer(item)}>
+                  <h4>
+                    {item.nome} {item.cognome} {item.phone}{" "}
+                  </h4>
+                </li>
+              ))}
+          </ul>
+        </div>
+
+        <div className={styles.playerInAMathcWrapper}>
+          <h2>Player in a match </h2>
+          <ul>
+            {playerInAMatch &&
+              playerInAMatch.map((item, id) => (
+                <li key={id} onClick={() => removePlayer(item)}>
+                  <h4>
+                    {item.nome} {item.cognome} {item.phone} ❌
+                  </h4>
+                </li>
+              ))}
+          </ul>
+        </div>
       </div>
-      <div className={styles.playerInAMathcWrapper}>
-        <h2>Player in a match </h2>
-        <ul>
-          {playerInAMatch &&
-            playerInAMatch.map((item, id) => (
-              <li key={id} onClick={() => removePlayer(item)}>
-                <h4>
-                  {item.nome} {item.cognome} {item.phone}
-                </h4>
-              </li>
-            ))}
-        </ul>
-      </div>
+
       <div className={styles.linkWrapper}>
         <div>
-          <Link to="/challenge">Go challenge</Link>
+          <Link to="/"> ⬅︎ Return to Home </Link>
         </div>
         <div>
-          <Link to="/"> ⬅︎Return to Home </Link>
+          <Link to="/challenge">Go challenge ➡︎ </Link>
         </div>
       </div>
     </div>

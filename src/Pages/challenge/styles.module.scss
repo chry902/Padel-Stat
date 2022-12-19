@@ -2,44 +2,28 @@
     position: relative;
     width: 100%;
     height: 100%;
+    z-index: 2;
 
-    .linkWrapper{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 0 1rem;
-        .buttonStayles{
-           
-            button{
-                font-size: medium;
-                color: #002fff;
-                background-color: #4aff01;
-                outline-style: auto;
-                width: 145px;
-                height: 39px;
-                border: none;
-                border-radius: 8px;
-            }
-        }
-    }
     .modal{
+        position: fixed;
+        top: 0;
         width: 100vw;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.518);
         display: flex;
         justify-content:center;
-        align-items:flex-start;
+        align-items:center;
         display: none;
-        position: absolute;
+        z-index: 100;
         
         .confirmeModal{
-            width: 300px;
+            // width: 300px;
             height: 200px;
             background-color: rgba(3, 37, 116, 0.845);
             border-radius: 15px;
             padding: 1rem;
             color: white;
-            margin-top: 6em;
+            margin-bottom: 13rem;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -57,6 +41,25 @@
         }
         
         
+    }
+    .linkWrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 1rem;
+        .buttonStayles{
+           
+            button{
+                font-size: medium;
+                color: #002fff;
+                background-color: #4aff01;
+                outline-style: auto;
+                width: 145px;
+                height: 39px;
+                border: none;
+                border-radius: 8px;
+            }
+        }
     }
     .modalOn{
         display:flex;

@@ -46,21 +46,23 @@ const Challeng = ({ peopleTraining, setPlayerInAMatch }) => {
           </button>
         </div>
       </div>
-      <div className={styles.linkWrapper}>
-        <div>
-          <Link to="/SelectPeople"> ⬅︎ Return to select people </Link>
-        </div>
-
-        <div className={styles.buttonStayles}>
-          <button onClick={(e) => controllEnd(e)}>End the training</button>
-        </div>
-      </div>
 
       <div className={styles.card_Wrapper}>
         {peopleTraining &&
           peopleTraining.map((item, index) => (
             <CardStat key={index} item={item} />
           ))}
+      </div>
+      <div className={styles.linkWrapper}>
+        <div>
+          <Link to="/SelectPeople"> ⬅︎ Return to select people </Link>
+        </div>
+
+        <div className={styles.buttonStayles}>
+          <button href="#modale" onClick={(e) => controllEnd(e)}>
+            End the training
+          </button>
+        </div>
       </div>
     </div>
   );

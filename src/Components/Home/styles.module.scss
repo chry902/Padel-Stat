@@ -1,10 +1,37 @@
 .home_container{
-    color:rgb(8, 0, 255);
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    // color:var(--blue-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    // align-items: center;
-    img{
-        width: 50px;
-        height: auto;
+    align-items: center;
+
+    .home_Links_wrapper{
+        width: 100%;
+        height: 100%;
+        z-index: 30;
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
     }
+    .logo_centrale{
+        background-color: var(--blue-color);
+        width: 100%;
+        max-height: 100%;
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          background-color: var(--blue-color);
+          width: 50%;
+          object-fit: contain;
+          
+        }
+      }
 }

@@ -43,6 +43,7 @@ const AddPlayer = ({ players, setPlayers }) => {
       <form className={styles.formStyles} onSubmit={addPlayer}>
         <label>Name</label>
         <input
+          className={styles.input_style}
           value={playerName}
           onChange={(e) => setPlayerName(e.target.value)}
           type="text"
@@ -53,6 +54,7 @@ const AddPlayer = ({ players, setPlayers }) => {
 
         <label>Surname</label>
         <input
+          className={styles.input_style}
           value={playerSurname}
           onChange={(e) => setPlayerSurname(e.target.value)}
           type="text"
@@ -63,6 +65,7 @@ const AddPlayer = ({ players, setPlayers }) => {
 
         <label>Phone number</label>
         <input
+          className={styles.input_style}
           value={playerPhoneNumber}
           onChange={(e) => setPlayerPhoneNumber(e.target.value)}
           type="number"

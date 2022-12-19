@@ -5,7 +5,7 @@ import DataPlayer from "../src/DataPlayer/data.json";
 import Get from "./Components/Time";
 import logoStatz from "./Images/logoStatz.png";
 import padelBall from "./Images/pallaTennis.png";
-import logoCentrale from "./Images/corto_padel.png";
+
 const Home = lazy(() => import("./Components/Home"));
 const AddPlayer = lazy(() => import("./Pages/addPlayer"));
 const SelectPeople = lazy(() => import("./Pages/selectPeople"));
@@ -237,8 +237,8 @@ function App() {
             <div className="titleWrapper">
               <img src={padelBall} alt="icona palla tennis" />
             </div>
-            <h1>Padel Statz</h1>
-            <div className="logoWrapper">
+            <h1>PadelStatz</h1>
+            <div className="logoWrapperTitle">
               <img src={logoStatz} alt="logo pagina" />
             </div>
           </header>
@@ -288,9 +288,6 @@ function App() {
               />
             </Routes>
           </body>
-        </div>
-        <div className="logoCentrale">
-          <img src={logoCentrale} alt="immagine uomo con pala al centro" />
         </div>
       </div>
     </Router>

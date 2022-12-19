@@ -16,7 +16,7 @@
         border-radius: 15px;
         background-color: white;
         margin: 4px;
-        border: 1px solid black;
+        
         display: flex;
         flex-direction: column;
         // justify-content: space-betwee;
@@ -24,7 +24,7 @@
     
         h3{
             padding: 0.5rem;
-            color: rgb(0, 132, 255);
+            color: var(--blue-color);
             margin: 0!important;
             text-align: center;
             margin: 1rem 0 1rem 0;
