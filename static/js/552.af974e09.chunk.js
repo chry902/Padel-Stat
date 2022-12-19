@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkpadel_stat=self.webpackChunkpadel_stat||[]).push([[552],{552:function(e,n,l){l.r(n),l.d(n,{default:function(){return i}});var r="styles_home_container__PywIb",t=l(87),s=l(184),i=function(){return(0,s.jsx)("div",{className:r,children:(0,s.jsxs)("ul",{children:[(0,s.jsx)("li",{children:(0,s.jsx)(t.rU,{to:"/AddPlayer",children:" Ad new Player"})}),(0,s.jsx)("li",{children:(0,s.jsx)(t.rU,{to:"/selectPeople",children:"Start training"})})]})})}}}]);
-//# sourceMappingURL=552.af974e09.chunk.js.map
