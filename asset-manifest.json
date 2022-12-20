@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/padel-stat/static/css/main.f10f6f5a.css",
-    "main.js": "/padel-stat/static/js/main.19448ca6.js",
+    "main.js": "/padel-stat/static/js/main.0d1e0061.js",
     "static/css/384.052df0d3.chunk.css": "/padel-stat/static/css/384.052df0d3.chunk.css",
     "static/js/384.7c45875c.chunk.js": "/padel-stat/static/js/384.7c45875c.chunk.js",
-    "static/css/25.941fd604.chunk.css": "/padel-stat/static/css/25.941fd604.chunk.css",
+    "static/css/25.382dbf59.chunk.css": "/padel-stat/static/css/25.382dbf59.chunk.css",
     "static/js/25.1871b60c.chunk.js": "/padel-stat/static/js/25.1871b60c.chunk.js",
     "static/css/50.c1159f54.chunk.css": "/padel-stat/static/css/50.c1159f54.chunk.css",
     "static/js/50.df3a9120.chunk.js": "/padel-stat/static/js/50.df3a9120.chunk.js",
@@ -14,10 +14,10 @@
     "static/media/corto_padel.png": "/padel-stat/static/media/corto_padel.b49bcdcab89497a9847a.png",
     "index.html": "/padel-stat/index.html",
     "main.f10f6f5a.css.map": "/padel-stat/static/css/main.f10f6f5a.css.map",
-    "main.19448ca6.js.map": "/padel-stat/static/js/main.19448ca6.js.map",
+    "main.0d1e0061.js.map": "/padel-stat/static/js/main.0d1e0061.js.map",
     "384.052df0d3.chunk.css.map": "/padel-stat/static/css/384.052df0d3.chunk.css.map",
     "384.7c45875c.chunk.js.map": "/padel-stat/static/js/384.7c45875c.chunk.js.map",
-    "25.941fd604.chunk.css.map": "/padel-stat/static/css/25.941fd604.chunk.css.map",
+    "25.382dbf59.chunk.css.map": "/padel-stat/static/css/25.382dbf59.chunk.css.map",
     "25.1871b60c.chunk.js.map": "/padel-stat/static/js/25.1871b60c.chunk.js.map",
     "50.c1159f54.chunk.css.map": "/padel-stat/static/css/50.c1159f54.chunk.css.map",
     "50.df3a9120.chunk.js.map": "/padel-stat/static/js/50.df3a9120.chunk.js.map",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.f10f6f5a.css",
-    "static/js/main.19448ca6.js"
+    "static/js/main.0d1e0061.js"
   ]
 }
