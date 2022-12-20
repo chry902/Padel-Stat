@@ -86,7 +86,7 @@ const AddPlayer = ({ players, setPlayers }) => {
         {/* <input type="time" /> */}
         <input className={styles.button} type="submit" value="Send it!" />
       </form>
-      <div>
+      <div className={styles.linkWrapper}>
         <Link to="/"> ⬅︎ Return to select people </Link>
       </div>
     </div>
