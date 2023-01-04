@@ -21,16 +21,12 @@ function App() {
   const [peopleTraining, setPeopleTraining] = useState("");
 
   // --------------------fetch per la data dell allenamento
-  // eslint-disable-next-line
-  const [time, setTime] = useState("12/12/20022");
-  // useEffect(() => {
-  //   Get().then((data) =>
-  //     setTime(
-  //       data.datetime.split("T")[0].split("-").reverse().join("-").toString()
-  //     )
-  //   );
-  // }, []);
 
+  const options = { year: "numeric", month: "numeric", day: "numeric" };
+  const today = new Date().toLocaleDateString("it-IT", options);
+  const [time] = useState(today || "01/01/20023");
+
+  console.log("--------time", today);
   console.log("--------players", peopleTraining);
 
   // //----------------- seleziona i giocatori ed efettua un controllo ed aggiunge obj allenamento  ----------------------------------
